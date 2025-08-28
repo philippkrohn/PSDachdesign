@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #f0f0f0;
-    background-color: #000000;
+    color: #333333; /* Dunkler Text für Lesbarkeit */
+    background-color: #FFFFFF; /* Weißer Hintergrund */
 }
 
 .container {
@@ -27,25 +27,24 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1rem;
+    color: #2c3e50; /* Ein dunkles Blau für Überschriften */
 }
 
 h1 {
     font-size: 3rem;
-    color: #1e1e1e;
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #1e1e1e;
 }
 
 h3 {
     font-size: 1.8rem;
-    color: #1e1e1e;
 }
 
 p {
     margin-bottom: 1rem;
+    color: #555555; /* Etwas hellerer Text für Absätze */
 }
 
 /* Buttons */
@@ -62,44 +61,44 @@ p {
 }
 
 .btn-primary {
-    background-color: #7a3e2f;
+    background-color: #FF6600; /* Haupt-Orange */
     color: white;
-    border-color: #7a3e2f;
+    border-color: #FF6600;
 }
 
 .btn-primary:hover {
-    background-color: #ea580c;
-    border-color: #ea580c;
+    background-color: #FF8533; /* Helleres Orange für Hover */
+    border-color: #FF8533;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background-color: #1e1e1e;
+    background-color: #007BFF; /* Blau als Sekundärfarbe */
     color: white;
-    border-color: #1e1e1e;
+    border-color: #007BFF;
 }
 
 .btn-secondary:hover {
-    background-color: #000000;
-    border-color: #000000;
+    background-color: #0056b3; /* Dunkleres Blau für Hover */
+    border-color: #0056b3;
     transform: translateY(-2px);
 }
 
 .btn-outline {
     background-color: transparent;
-    color: #1e1e1e;
-    border-color: #1e1e1e;
+    color: #FF6600; /* Oranger Text */
+    border-color: #FF6600; /* Oranger Rand */
 }
 
 .btn-outline:hover {
-    background-color: #1e1e1e;
+    background-color: #FF6600; /* Oranger Hintergrund bei Hover */
     color: white;
     transform: translateY(-2px);
 }
 
 /* Navigation */
 .navbar {
-    background-color: #000000;
+    background-color: #FFFFFF; /* Weißer Navigationshintergrund */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -119,7 +118,7 @@ p {
 }
 
 .nav-logo h2 {
-    color: #1e1e1e;
+    color: #2c3e50;
     margin: 0;
     font-size: 1.8rem;
 }
@@ -132,14 +131,14 @@ p {
 
 .nav-link {
     text-decoration: none;
-    color: #f0f0f0;
+    color: #333333; /* Dunkler Text für Links */
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #7a3e2f;
+    color: #FF6600; /* Orange bei Hover */
 }
 
 .nav-link::after {
@@ -149,7 +148,7 @@ p {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #7a3e2f;
+    background-color: #FF6600; /* Orange für den unteren Strich */
     transition: width 0.3s ease;
 }
 
@@ -166,7 +165,7 @@ p {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #1e1e1e;
+    background-color: #333333; /* Dunkle Balken für das Hamburger-Menü */
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -174,7 +173,7 @@ p {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #1e1e1e 0%, #000000 100%);
+    background: #F8F9FA; /* Sehr helles Grau als Hintergrund */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -196,21 +195,21 @@ p {
 
 .hero-title {
     font-size: 4rem;
-    color: #1e1e1e;
+    color: #2c3e50;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: #7a3e2f;
+    color: #FF6600; /* Orange für den Untertitel */
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: #6b7280;
+    color: #555555;
     margin-bottom: 2rem;
     line-height: 1.7;
 }
@@ -235,7 +234,7 @@ p {
 /* Services Section */
 .services {
     padding: 80px 0;
-    background-color: #000000;
+    background-color: #FFFFFF;
 }
 
 .section-header {
@@ -249,7 +248,7 @@ p {
 
 .section-header p {
     font-size: 1.2rem;
-    color: #6b7280;
+    color: #555555;
 }
 
 .services-grid {
@@ -260,23 +259,23 @@ p {
 }
 
 .service-card {
-    background: #ffffff;
+    background: #FFFFFF;
     border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e5e7eb;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .service-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #7a3e2f, #ea580c);
+    background: linear-gradient(135deg, #FF6600, #FF8533); /* Oranger Gradient */
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -291,7 +290,7 @@ p {
 
 .service-card h3 {
     margin-bottom: 1.5rem;
-    color: #1e1e1e;
+    color: #2c3e50;
 }
 
 .service-list {
@@ -307,7 +306,7 @@ p {
 }
 
 .service-item i {
-    color: #7a3e2f;
+    color: #FF6600; /* Orange für Icons */
     margin-top: 0.25rem;
     flex-shrink: 0;
 }
@@ -319,14 +318,14 @@ p {
 
 .service-promise {
     font-weight: 600;
-    color: #1e1e1e;
+    color: #2c3e50;
     margin-bottom: 1.5rem;
     font-style: italic;
 }
 
 .cta-section {
     text-align: center;
-    background: linear-gradient(135deg, #1e1e1e, #000000);
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Blauer Gradient */
     color: white;
     padding: 3rem;
     border-radius: 12px;
@@ -340,14 +339,14 @@ p {
 }
 
 .cta-section .btn-primary {
-    background-color: #7a3e2f;
-    border-color: #7a3e2f;
+    background-color: #FF6600;
+    border-color: #FF6600;
 }
 
 /* About Section */
 .about {
     padding: 80px 0;
-    background-color: #1e1e1e;
+    background-color: #F8F9FA; /* Helles Grau */
 }
 
 .about-content {
@@ -377,7 +376,7 @@ p {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background-color: #000000;
+    background-color: #FFFFFF;
 }
 
 .contact-content {
@@ -390,7 +389,7 @@ p {
 .contact-info h3,
 .contact-form h3 {
     margin-bottom: 1.5rem;
-    color: #1e1e1e;
+    color: #2c3e50;
 }
 
 .contact-item {
@@ -401,14 +400,14 @@ p {
 }
 
 .contact-item i {
-    color: #7a3e2f;
+    color: #FF6600; /* Orange */
     font-size: 1.2rem;
     margin-top: 0.25rem;
     flex-shrink: 0;
 }
 
 .contact-item a {
-    color: #7a3e2f;
+    color: #FF6600;
     text-decoration: none;
 }
 
@@ -417,16 +416,17 @@ p {
 }
 
 .contact-note {
-    background-color: #fef3c7;
+    background-color: #FFF3CD; /* Heller Gelbton */
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #7a3e2f;
+    border-left: 4px solid #FF6600; /* Orange */
     margin-top: 2rem;
 }
 
 .contact-note p {
     margin: 0;
     font-size: 0.95rem;
+    color: #664d03; /* Dunklerer Text für den Hinweis */
 }
 
 /* Form Styles */
@@ -438,7 +438,7 @@ p {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: #f0f0f0;
+    color: #333333;
 }
 
 .form-group input,
@@ -446,7 +446,7 @@ p {
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #ced4da; /* Hellerer Rand */
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -456,7 +456,7 @@ p {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #7a3e2f;
+    border-color: #FF6600; /* Orange bei Fokus */
 }
 
 .form-group textarea {
@@ -466,7 +466,7 @@ p {
 
 /* Footer */
 .footer {
-    background-color: #1e1e1e;
+    background-color: #2c3e50; /* Dunkelblau für den Footer */
     color: white;
     padding: 3rem 0 1rem;
 }
@@ -480,7 +480,7 @@ p {
 
 .footer-section h3,
 .footer-section h4 {
-    color: #7a3e2f;
+    color: #FF6600; /* Orange */
     margin-bottom: 1rem;
 }
 
@@ -499,13 +499,13 @@ p {
 }
 
 .footer-section ul li a:hover {
-    color: #7a3e2f;
+    color: #FF6600; /* Orange */
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid #374151;
+    border-top: 1px solid #34495e; /* Etwas helleres Blau für die Trennlinie */
     color: #d1d5db;
 }
 
@@ -516,7 +516,7 @@ p {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #7a3e2f;
+    background-color: #FF6600; /* Orange */
     color: white;
     border: none;
     border-radius: 50%;
@@ -530,7 +530,7 @@ p {
 }
 
 .back-to-top:hover {
-    background-color: #ea580c;
+    background-color: #FF8533;
     transform: translateY(-2px);
 }
 
@@ -703,7 +703,7 @@ p {
 
 /* Additional styles for subpages */
 .nav-link.active {
-    color: #7a3e2f;
+    color: #FF6600;
 }
 
 .nav-link.active::after {
@@ -724,13 +724,13 @@ p {
 }
 
 .service-features i {
-    color: #7a3e2f;
+    color: #FF6600;
     font-size: 0.8rem;
 }
 
 .why-choose-us {
     padding: 80px 0;
-    background-color: #1e1e1e;
+    background-color: #F8F9FA;
 }
 
 .benefits-grid {
@@ -756,7 +756,7 @@ p {
 .benefit-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #1e1e1e, #000000);
+    background: linear-gradient(135deg, #007BFF, #0056b3);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -771,7 +771,7 @@ p {
 
 .promise-section {
     text-align: center;
-    background: linear-gradient(135deg, #7a3e2f, #ea580c);
+    background: linear-gradient(135deg, #FF6600, #FF8533);
     color: white;
     padding: 3rem;
     border-radius: 12px;
@@ -789,7 +789,7 @@ p {
 }
 
 .equipment-specs {
-    background-color: #1e1e1e;
+    background-color: #F8F9FA;
     padding: 80px 0;
 }
 
@@ -807,7 +807,7 @@ p {
 }
 
 .spec-card h3 {
-    color: #1e1e1e;
+    color: #2c3e50;
     margin-bottom: 1rem;
 }
 
@@ -828,17 +828,17 @@ p {
 
 .spec-label {
     font-weight: 500;
-    color: #f0f0f0;
+    color: #333333;
 }
 
 .spec-value {
-    color: #7a3e2f;
+    color: #FF6600;
     font-weight: 600;
 }
 
 .gallery-preview {
     padding: 80px 0;
-    background-color: #000000;
+    background-color: #FFFFFF;
 }
 
 .gallery-grid {
@@ -906,13 +906,13 @@ p {
 .service-applications {
     margin-top: 1rem;
     padding: 1rem;
-    background-color: #1e1e1e;
+    background-color: #e9ecef;
     border-radius: 8px;
-    border-left: 4px solid #7a3e2f;
+    border-left: 4px solid #FF6600;
 }
 
 .service-applications strong {
-    color: #1e1e1e;
+    color: #2c3e50;
     display: block;
     margin-bottom: 0.5rem;
 }
@@ -924,7 +924,7 @@ p {
 
 .service-applications li {
     font-size: 0.9rem;
-    color: #6b7280;
+    color: #555555;
     margin-bottom: 0.25rem;
     padding-left: 1rem;
     position: relative;
@@ -934,7 +934,7 @@ p {
     content: '→';
     position: absolute;
     left: 0;
-    color: #7a3e2f;
+    color: #FF6600;
     font-weight: bold;
 }
 
@@ -943,13 +943,13 @@ p {
 .tech-specs {
     margin-top: 1.5rem;
     padding: 1rem;
-    background-color: #1e1e1e;
+    background-color: #e9ecef;
     border-radius: 8px;
-    border-left: 4px solid #1e1e1e;
+    border-left: 4px solid #007BFF;
 }
 
 .tech-specs h4 {
-    color: #1e1e1e;
+    color: #2c3e50;
     margin-bottom: 0.75rem;
     font-size: 1rem;
 }
@@ -961,7 +961,7 @@ p {
 
 .spec-list li {
     font-size: 0.9rem;
-    color: #f0f0f0;
+    color: #333333;
     margin-bottom: 0.5rem;
     padding-left: 1rem;
     position: relative;
@@ -971,13 +971,13 @@ p {
     content: '•';
     position: absolute;
     left: 0;
-    color: #1e1e1e;
+    color: #007BFF;
     font-weight: bold;
 }
 
 .target-groups {
     padding: 80px 0;
-    background-color: #1e1e1e;
+    background-color: #F8F9FA;
 }
 
 .target-grid {
@@ -1002,7 +1002,7 @@ p {
 .target-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #7a3e2f, #ea580c);
+    background: linear-gradient(135deg, #FF6600, #FF8533);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1016,13 +1016,13 @@ p {
 }
 
 .target-card h3 {
-    color: #1e1e1e;
+    color: #2c3e50;
     margin-bottom: 1rem;
 }
 
 .process-section {
     padding: 80px 0;
-    background-color: #000000;
+    background-color: #FFFFFF;
 }
 
 .process-steps {
@@ -1041,7 +1041,7 @@ p {
 .step-number {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #1e1e1e, #000000);
+    background: linear-gradient(135deg, #2c3e50, #34495e);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -1053,12 +1053,12 @@ p {
 }
 
 .step-content h3 {
-    color: #1e1e1e;
+    color: #2c3e50;
     margin-bottom: 0.5rem;
 }
 
 .step-content p {
-    color: #6b7280;
+    color: #555555;
     line-height: 1.6;
 }
 
@@ -1081,4 +1081,3 @@ p {
         text-align: center;
     }
 }
-
